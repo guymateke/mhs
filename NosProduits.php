@@ -32,37 +32,15 @@
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
-
-      <a href="index.php" class="logo d-flex align-items-center me-auto">
-        <img src="assets/img/logo1.jpeg" alt="logo">
-        <h1 class="sitename">MHSCOURTAGE </h1>
-      </a>
-
-
-    </div>
-  </header>
-
+  
   <body>
-
-
-
-
 
 
   <!-- page produit -->
 
 
-  <!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Nos Produits | MHS COURTAGE</title>
-  <!-- Lien vers Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
   <style>
     /* Style personnalisé pour les images interactives */
     .product-card {
@@ -115,8 +93,11 @@
 
     <!-- Grid des Produits -->
     <div class="row g-4">
+
+     
       <!-- Produit 1 -->
       <div class="col-md-4">
+      <h4>Assurance Santé</h4>
         <div class="product-card">
           
           <img src="assets/img/famille.jpeg" alt="Assurance Santé">
@@ -130,16 +111,20 @@
 
       <!-- Produit 2 -->
       <div class="col-md-4">
+
+      <h4>Assurance Habitation</h4>
         <div class="product-card">
           <img src="assets/img/habitat.png" alt="Assurance Habitat">
           <div class="product-overlay">
-            <span>Assurance Habitat</span>
+            <span>Assurance Habitation</span>
           </div>
         </div>
       </div>
 
       <!-- Produit 3 -->
+       
       <div class="col-md-4">
+      <h4>Assurance Auto/Moto</h4>
         <div class="product-card">
           <img src="assets/img/auto.png" alt="Assurance Auto/Moto">
           <div class="product-overlay">
@@ -149,34 +134,35 @@
       </div>
 
       <!-- Produit 4 -->
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <div class="product-card">
           <img src="assets/img/voyage.jpg" alt="Assurance Voyage">
           <div class="product-overlay">
             <span>Assurance Voyage</span>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Produit 5 -->
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
+        <h4>Assurance Vie et Prévoyance</h4>
         <div class="product-card">
           <img src="assets/img/seniorheureux.jpg" alt="Assurance Vie et Prévoyance">
           <div class="product-overlay">
             <span>Assurance Vie et Prévoyance</span>
           </div>
         </div>
-      </div>
+      </div> -->
 
       <!-- Produit 6 -->
-      <div class="col-md-4">
+      <!-- <div class="col-md-4">
         <div class="product-card">
           <img src="assets/img/scolaire.jpeg" alt="Assurance Scolaire">
           <div class="product-overlay">
             <span>Assurance Scolaire</span>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>

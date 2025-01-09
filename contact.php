@@ -61,10 +61,10 @@
         </div>
 
         <!-- Formulaire de Contact -->
-        <form>
+        <form action="forms/contactform.php" method="Post">
           <div class="mb-3">
-            <label for="name" class="form-label">Nom complet</label>
-            <input type="text" class="form-control" id="name" placeholder="Entrez votre nom complet" required>
+            <label for="nomcomplet" class="form-label">Nom complet</label>
+            <input type="text" class="form-control" id="nomcomplet" placeholder="Entrez votre nom complet" required>
           </div>
 
           <div class="mb-3">
@@ -72,9 +72,15 @@
             <input type="email" class="form-control" id="email" placeholder="Entrez votre adresse e-mail" required>
           </div>
 
+
           <div class="mb-3">
-            <label for="subject" class="form-label">Objet</label>
-            <input type="text" class="form-control" id="subject" placeholder="L'objet de votre message" required>
+        <label for="telephone" class="form-label">Téléphone</label>
+        <input type="tel" class="form-control" name="telephone" placeholder="Entrez votre numéro de téléphone" required>
+      </div>
+
+          <div class="mb-3">
+            <label for="objet" class="form-label">Objet</label>
+            <input type="text" class="form-control" id="objet" placeholder="L'objet de votre message" required>
           </div>
 
           <div class="mb-3">

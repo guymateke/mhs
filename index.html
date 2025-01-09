@@ -32,6 +32,77 @@
 
 <body class="index-page">
 
+
+  <!-- stylisation consentement cookies -->
+<style> 
+  #cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000;
+  }
+  
+  .cookie-popup p {
+    margin: 0 0 15px 0;
+    font-size: 14px;
+  }
+  
+  .cookie-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .btn-danger {
+    background-color: #517eb5;
+    color: white;
+    border: none;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: white;
+    border: none;
+  }
+  
+  .btn-success {
+    background-color: #2a63a4;
+    color: white;
+    border: none;
+  }
+
+</style>
+  
+
+  <!-- Consentement cookies  -->
+    
+  <div id="cookie-banner" style="display: flex;">
+    <div class="cookie-popup">
+      <p>
+        <strong>MHS COURTAGE</strong> utilise des cookies pour collecter des statistiques, vous proposer de la publicité personnalisée et vous permettre de partager du contenu sur les réseaux sociaux.
+        Nous conservons votre choix pendant 13 mois. Vous pouvez changer d'avis à tout moment en cliquant sur le lien disponible dans la page 
+        <a href="/cookie.php">Gestion des cookies</a>.
+      </p>
+      <div class="cookie-buttons">
+        <button id="refuse-cookies" class="btn btn-danger">Refuser</button>
+        <button id="configure-cookies" class="btn btn-secondary">Configurer</button>
+        <button id="accept-cookies" class="btn btn-success">Accepter et fermer</button>
+      </div>
+    </div>
+  </div>
+  
+
+
+
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
@@ -939,7 +1010,7 @@
         <div class="col-lg-4 col-md-12 footer-newsletter">
           <h4>Newsletter</h4>
           <p>Abonnez-vous à notre newsletter et recevez les dernières nouvelles sur nos produits et services!</p>
-          <form action="/" method="post" class="php-email-form">
+          <form action="forms/subscribe_newsletter.php" method="post" class="php-email-form">
             <div class="newsletter-form"><input type="email" name="email" placeholder="Votre email" required><input type="submit" value="S'abonner"></div>
             <div class="loading">Loading</div>
             <div class="error-message"></div>
@@ -977,6 +1048,41 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- script consentement cookies  -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const cookieBanner = document.getElementById("cookie-banner");
+      const acceptBtn = document.getElementById("accept-cookies");
+      const refuseBtn = document.getElementById("refuse-cookies");
+  
+      // Vérifier si le consentement est déjà donné
+      // if (localStorage.getItem("cookies-consent")) {
+      //   cookieBanner.style.display = "none";
+      // }
+  
+      // Accepter les cookies
+      acceptBtn.addEventListener("click", function () {
+        localStorage.setItem("cookies-consent", "accepted");
+        cookieBanner.style.display = "none";
+      });
+  
+      // Refuser les cookies
+      refuseBtn.addEventListener("click", function () {
+        localStorage.setItem("cookies-consent", "refused");
+        cookieBanner.style.display = "none";
+      });
+  
+      // Si besoin, ajouter un comportement pour "Configurer"
+      const configureBtn = document.getElementById("configure-cookies");
+      configureBtn.addEventListener("click", function () {
+        alert("Redirigez l'utilisateur vers une page de configuration des cookies.");
+      });
+    });
+  </script>
+  
 
 </body>
 

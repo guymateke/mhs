@@ -88,13 +88,13 @@
   <div class="container">
     <div class="text-center mb-5">
       <h1 class="display-5 fw-bold text-primary">Nos Produits</h1>
-      <p class="text-muted">Découvrez les solutions d'assurance de <strong>MHS COURTAGE</strong>, conçues pour répondre à tous vos besoins avec une approche innovante et sur mesure.</p>
+      <p class="text-muted">Découvrez les solutions d'assurance de <strong>MHS COURTAGE</strong>, conçues pour répondre à tous vos besoins avec une approche innovante et sur mesure selon votre statut particuliers ou Professionel.</p>
     </div>
 
     <!-- Grid des Produits -->
     <div class="row g-4">
 
-     
+     <h4>Nous disposons des solutions pour <strong>Particulier</strong> suivante: </h4>
       <!-- Produit 1 -->
       <div class="col-md-4">
       <h4>Assurance Santé</h4>
@@ -116,7 +116,8 @@
         <div class="product-card">
           <img src="assets/img/habitat.png" alt="Assurance Habitat">
           <div class="product-overlay">
-            <span>Assurance Habitation</span>
+          <a href="/assurance/assurancehabitat.php"><span>Assurance Habitation</span></a>
+
           </div>
         </div>
       </div>
@@ -128,41 +129,51 @@
         <div class="product-card">
           <img src="assets/img/auto.png" alt="Assurance Auto/Moto">
           <div class="product-overlay">
-            <span>Assurance Auto/Moto</span>
+          <a href="/assurance/assuranceAutomoto.php"><span>Assurance Auto/Moto</span></a>
+
           </div>
         </div>
       </div>
 
+
+      <h4>Nous disposons des solutions pour <strong>Professionel</strong> suivante: </h4>
+
+
       <!-- Produit 4 -->
-      <!-- <div class="col-md-4">
+       <div class="col-md-4">
+        <h4>VTC</h4>
         <div class="product-card">
-          <img src="assets/img/voyage.jpg" alt="Assurance Voyage">
+          <img src="assets/img/chauffeur.png" alt="VTC">
           <div class="product-overlay">
-            <span>Assurance Voyage</span>
+          <a href="/assurance/assuranceVtc.php"><span>VTC</span></a>
+
           </div>
         </div>
-      </div> -->
+      </div> 
 
       <!-- Produit 5 -->
-      <!-- <div class="col-md-4">
-        <h4>Assurance Vie et Prévoyance</h4>
+      <div class="col-md-4">
+        <h4>Decennale</h4>
         <div class="product-card">
-          <img src="assets/img/seniorheureux.jpg" alt="Assurance Vie et Prévoyance">
+          <img src="assets/img/deccenale.png" alt="Decennale">
           <div class="product-overlay">
-            <span>Assurance Vie et Prévoyance</span>
+          <a href="/assurance/assuranceDecennale.php"><span>Decennale</span></a>
+
           </div>
         </div>
-      </div> -->
+      </div>
 
       <!-- Produit 6 -->
-      <!-- <div class="col-md-4">
+      <div class="col-md-4">
+        <h4>RC PRO</h4>
         <div class="product-card">
-          <img src="assets/img/scolaire.jpeg" alt="Assurance Scolaire">
+          <img src="assets/img/RC.png" alt="RC PRO">
           <div class="product-overlay">
-            <span>Assurance Scolaire</span>
+          <a href="/assurance/assuranceRcpro.php"><span>RC PRO</span></a>
+
           </div>
         </div>
-      </div> -->
+      </div>
     </div>
   </div>
 </section>
@@ -213,7 +224,10 @@
         <li><a href="assurance/assuranceSante.php">Assurance Santé</a></li>
         <li><a href="assurance/assuranceAutomoto.php">Assurance Auto/Moto</a></li>
         <li><a href="assurance/assurancehabitat.php">Assurance Habitation</a></li>
-        <li><a href="assurance/assuranceVieetprevoyance.php">Assurance Vie et Prevoyance</a></li>
+        <li><a href="assurance/assuranceVtc.php">VTC</a></li>
+        <li><a href="assurance/assuranceDecennale.php">DECENNALE</a></li>
+        <li><a href="assurance/assuranceRcpro.php">RC PRO</a></li>
+        
 
       </ul>
     </div>

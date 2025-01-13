@@ -1,1 +1,0 @@
-<h4>bienvenue a l'assurance Automoto</h4>

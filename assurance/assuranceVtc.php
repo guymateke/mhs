@@ -1,1 +1,0 @@
-<h4>Bienvenue à l'assurance VTC</h4>
